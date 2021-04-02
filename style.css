@@ -1,0 +1,55 @@
+
+* {
+    color: white;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    background: #191A18;
+    font-size: 60%; 
+    font-family: 'Roboto', sans-serif;  
+}
+
+#container{
+    margin: 200px auto ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+#a h1 {
+    font-size: 3.0rem;
+    color: #21EB00;
+}
+
+#a p {
+    font-size: 1.8rem;
+    
+}
+
+#b {
+    display: flex;
+    flex-direction: column;
+}
+#b input{
+    background: #191A18;
+    border: none;
+    font-size: 1.8rem;
+    
+}
+
+#b a{ 
+    background: #21EB00;
+    font-size: 1.8rem;
+    color: #191A18;
+    font-weight: bold;
+    padding: 20px 80px 20px 80px;
+    border-radius: 25px;
+    margin-top: 30px;
+    
+}
+
+#b a:hover {
+    opacity: 0.8;
+}
