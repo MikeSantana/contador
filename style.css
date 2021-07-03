@@ -33,22 +33,26 @@ body{
     flex-direction: column;
 }
 #b input{
-    background: #191A18;
+    background: #454645;
     border: none;
     font-size: 1.8rem;
+    border-radius: 10px;
     
 }
+
 
 #b a{ 
     background: #21EB00;
     font-size: 1.8rem;
-    color: #191A18;
+    color:#191A18;
     font-weight: bold;
-    padding: 20px 80px 20px 80px;
-    border-radius: 25px;
+    border-radius: 10px;
     margin-top: 30px;
+    padding: 20px 80px 20px 80px;
+
     
-}
+} 
+
 
 #b a:hover {
     opacity: 0.8;

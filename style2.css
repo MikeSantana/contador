@@ -4,33 +4,37 @@
     list-style-type: none;
 }
 
+
 body{
     background: #191A18;
-    font-size: 60%; 
+   
     font-family: 'Roboto', sans-serif;  
     margin: 0px;
     padding: 0px;
 }
 
 header {
-    width: 1100px;
     height: 100px;
     display: flex;
     margin: 0 auto;
 }
 header #container { 
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
     height: 100%;
-    
     margin: 0 auto;
+    
+    
 }
 
 header #container h1 {
     font-size: 3.0rem;
     color: #21EB00;
+    margin: 0px;
+
 }
 
 header #container a {
@@ -38,9 +42,9 @@ header #container a {
     font-size: 1.8rem;
     color: #191A18;
     font-weight: bold;
-    padding: 20px 80px 20px 80px;
-    border-radius: 25px;
-    margin-top: 30px;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+
 }
 
 main {
@@ -58,16 +62,16 @@ main #main_container {
 main #main_container ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
 }
 
-main #main_container ul li {
-    display: inline-block;
-    margin-right: 50px;
-    margin-left: 50px;
-    
-}
+
 main #main_container ul li p {
     margin: 0px;
+    text-align: center;
+    
 }
 
 main #main_container ul li .text ,.number{
@@ -76,12 +80,29 @@ main #main_container ul li .text ,.number{
 
 
 main #main_container ul li .number {
-    font-size: 8.0rem;
+    font-size: clamp( 1.0rem, 9vw, 8.0rem);
     
 }
 main #main_container ul li .text {
     text-align: center;
     color: #21EB00;
-    
+    font-size: clamp( 0.2rem, 5vw, 3.5rem);
 }
  
+@media (max-width: 600px){
+    header #container { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+     
+        
+        
+    }
+    header {
+
+        height: 200px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+}
